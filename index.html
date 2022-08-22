@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List des Argonautes</title>
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        <img
+          src="https://www.wildcodeschool.com/assets/logo_main-e4f3f744c8e717f1b7df3858dce55a86c63d4766d5d9a7f454250145f097c2fe.png"
+          alt="Wild Code School logo"
+        />
+        Les Argonautes
+      </h1>
+    </header>
+
+    <!-- Main section -->
+    <main class="container">
+      <!-- New member form -->
+      <div class="main">
+        <h2>Ajouter un(e) Argonaute</h2>
+        <form action="" id="argonaute-form" class="new-member-form">
+          <label for="name">Nom de l&apos;Argonaute</label>
+          <input
+            class="form-control"
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Charalampos"
+          />
+          <button class="btn add-btn" type="submit" value="Submit">
+            Envoyer
+          </button>
+        </form>
+
+        <!-- Member list -->
+        <table class="table">
+          <thead>
+            <tr>
+              <th colspan="3">Membres de l'équipage</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="crew-list">
+            <tr></tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer>
+      <p>Réalisé par Jason en Anthestérion de l'an 515 avant JC</p>
+    </footer>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
